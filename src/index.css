@@ -17,6 +17,39 @@ body {
 }
 
 @layer components {
+  .navbar {
+    position: fixed;
+    width: 17rem;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #05396b;
+    z-index: 50;
+  }
+
+  .navbarMobile {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #05396b;
+    z-index: 50;
+  }
+
+  .landingSection {
+    background-image: url("./resources/img/test.png");
+    background-size: auto 100%;
+  }
+
   .title {
     color: #edf4e0;
     font-size: 3.5rem;

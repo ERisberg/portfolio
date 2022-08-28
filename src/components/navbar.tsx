@@ -1,10 +1,10 @@
-interface SidebarProps {
+interface NavbarProps {
   scrollToProject?: (index: number) => void;
 }
 
-const Sidebar = ({ scrollToProject }: SidebarProps) => {
+const Navbar = ({ scrollToProject }: NavbarProps) => {
   return (
-    <nav className="fixed w-[17rem] left-0 top-0 h-screen flex flex-col justify-center items-center bg-[#05396B] z-50">
+    <nav className="lg:navbar navbarMobile">
       <div>
         <img
           src="https://pbs.twimg.com/profile_images/1416909276233281537/WTe5KGlq_400x400.jpg"
@@ -44,4 +44,4 @@ const CustomLink = ({ label, index, onClick }: LinkProps) => {
 };
 //#endregion
 
-export default Sidebar;
+export default Navbar;
